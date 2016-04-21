@@ -34,11 +34,11 @@
 #' package_search(q = '*:*', fq = 'num_tags:[2 TO *]')$count
 #' package_search(q = '*:*', fq = 'num_tags:[1 TO *]')$count
 #' }
-package_search <- function(q = '*:*', fq = NULL, sort = NULL, rows = NULL,
+package_search <- function(resource_name, fq = NULL, sort = NULL, rows = NULL,
                            start = NULL, facet = FALSE, facet.limit = NULL,
                            facet.field = NULL,
                            url = get_default_url(), as = 'list', ...) {
-
+  q=paste0("name:",resource_name) #this may improve the usability of package_search and some other functions
   args <- cc(list(q = q, fq = fq, sort = sort, rows = rows, start = start,
                   facet = as_log(facet), facet.limit = facet.limit,
                   facet.field = facet.field))
