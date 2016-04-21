@@ -3,10 +3,10 @@
 #' @export
 #'
 #' @param package_id (character) id of package that the resource should be added to.
-#' This should be an alphanumeric string. Required.
-#' @param rcurl (character) url of resource. Required.
-#' @param description (character) description (optional). Required.
-#' @param name (character) name (optional). Required.
+#' This should be an alphanumeric string (Required)
+#' @param rcurl (character) url of resource (Required)
+#' @param description (character) description (optional) #description is not required.
+#' @param name (character) name (optional)
 #' @param revision_id (character) revision id (optional)
 #' @param format (character) format (optional)
 #' @param hash (character) hash (optional)
